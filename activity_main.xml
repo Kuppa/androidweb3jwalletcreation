@@ -10,16 +10,12 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="0dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <Button
             android:id="@+id/createWalletBtn"
@@ -28,7 +24,37 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="94dp"
-            android:text="Create Wallet"
-            android:onClick="createWallet"/>
+            android:onClick="createWallet"
+            android:text="Create Wallet" />
+
+        <Button
+            android:id="@+id/connectEthereumClientBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/createWalletBtn"
+            android:onClick="connectEth"
+            android:text="Connect Ethereum" />
+
+        <Button
+            android:id="@+id/loadCredentialsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/connectEthereumClientBtn"
+            android:onClick="loadCredentials"
+            android:text="Load Credentials" />
+
+        <Button
+            android:id="@+id/transferFundsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/loadCredentialsBtn"
+            android:onClick="transferFunds"
+            android:text="Transfer Funds" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

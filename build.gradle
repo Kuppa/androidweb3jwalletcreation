@@ -30,4 +30,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'org.web3j:core:3.3.1-android'
+    implementation 'org.web3j:core:3.3.1-android'
+    implementation 'ch.qos.logback:logback-core:1.2.3'
+    implementation 'ch.qos.logback:logback-classic:1.2.3'
+    implementation group: 'org.slf4j', name:'slf4j-api', version: '1.7.2'
+
 }
